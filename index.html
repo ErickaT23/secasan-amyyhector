@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy & Hector</title>
+    <meta name="description" content="Llego el momento de unir nuestro amor por siempre">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nos Casamos Amy & Hector">
+    <meta property="og:image" content="">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preload" href="/images/div.play.png" as="image">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8435ad2454.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+<div class="main-content">
+    <!-- Sección de sobre -->
+    <div id="envelope">
+        <div id="envelope-top"></div>
+        <div id="seal" onclick="openEnvelopeAndPlayMusic()">
+            <h2 class="fade-in-element">A | H</h2>
+        </div>
+        <div id="envelope-bottom"></div>
+    </div>
+    <!-- Sección de invitación -->
+    <div id="invitation" class="hidden">
+          <div class="photo-section fade-in-element">
+             <div class="photo-container">
+                 <img src="/images/H1.png" alt="Foto de la pareja" class="photo fade-in-element fade-in-element">
+             </div>
+                <div class="photo-text fade-in-element fade-in-element">
+                 <h1>Amy &  Héctor</h1>
+                 <h3 class="fade-in-element">29 . 03 . 2025</h3>
+               </div>
+          </div> 
+        <div class="contenedor-play">
+            <h2 class="texto-play fade-in-element fade-in-element">A thousand years - Christina Perri</h2>
+            <div id="playPauseButton" class="icono-contenedor fade-in-element fade-in-element">
+                <i id="iconoPlayPause" class="fas fa-play" aria-hidden="true"></i>
+            </div>
+            <audio id="audioPlayer" src="/Christina Perri - A Thousand Years.mp3"></audio>
+            <div class="progress-container">
+                <input id="progress-bar" type="range" value="0" min="0" max="100" step="1">
+                <div class="time-display">
+                    <span id="current-time">0:00</span> / <span id="duration-time">0:00</span>
+                </div>
+            </div>            
+        </div>               
+         <div class="content">
+            <div class="photo-section1 fade-in-element fade-in-element">
+                      <div class="photo-text1 fade-in-element fade-in-element">
+                          <h1>¡Nos casamos!</h1>
+                          <p>El día en que nuestros corazones se unen para siempre ha llegado. Compartan nuestra alegría en nuestra boda.</p>
+                          <div class="countdown fade-in-element fade-in-element">
+                              <div class="unit">
+                                 <span id="days" class="number">00</span>
+                                 <span class="label">Días</span>
+                              </div>
+                               <div class="unit">
+                                 <span id="hours" class="number">00</span>
+                                 <span class="label">Horas</span>
+                              </div>
+                             <div class="unit">
+                                 <span id="minutes" class="number">00</span>
+                                 <span class="label">Minutos</span>
+                             </div>
+                             <div class="unit">
+                                 <span id="seconds" class="number">00</span>
+                                 <span class="label">Segundos</span>
+                             </div>
+                         </div>                    
+                      </div>
+                 </div>
+            </div>
+        <div class="quote-section fade-in-element fade-in-element1">
+            <p>“Mejores son dos que uno; porque tienen mejor paga de su trabajo. Porque si cayeran, el uno levantará al otro…”    Eclesiastés 4:9</p>
+        </div>
+        <div class="div1"></div>
+            <div class="itinerary-section fade-in-element fade-in-element">
+                <div class="itinerary-item">
+                    <lord-icon 
+                     src="https://cdn.lordicon.com/lhzhnixi.json" 
+                     trigger="loop" 
+                     stroke="light" 
+                     colors="primary:#000000,secondary:#b29a68" 
+                     class="lord-icon-style"
+                     ></lord-icon>
+                    <h2>Celebremos Juntos</h2>
+                    <p>Amatique Bay Hotel, Puerto barrios</p>
+                    <div class="itinerary-details">
+                        <div class="time-location">
+                            <span class="date">29 Marzo</span>
+                            <span class="separator">|</span>
+                            <span class="time">16:00 hrs</span>
+                        </div>
+                        <p class="location">14 Calle Final, Finca Pichilingo, Puerto Barrios</p>
+                        <button type="button"  class="directions-button" onclick="location.href='https://maps.app.goo.gl/ec9ocRPZhnNQkKod8'">CÓMO LLEGAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gifts-section fade-in-element fade-in-element">
+                <h2>Lluvia de Sobres</h2>
+                <lord-icon 
+                 src="https://cdn.lordicon.com/ibydboev.json" 
+                 trigger="loop" 
+                 stroke="light" 
+                 colors="primary:#000,secondary:#b29a68" 
+                 class="lord-icon-style"
+                 ></lord-icon>
+                <p>Lo que más queremos es compartir contigo nuestro gran día, pero agradecemos mucho el gesto de un obsequio. Tendremos un cofre en la entrada para que puedas dejar tu sobre con efectivo</p>
+                <p>¡Gracias!</p>
+            </div>
+            <div class="dresscode-section fade-in-element fade-in-element">
+                <h2>Dress Code</h2>
+                <div class="icons">
+                    <img src="/images/ICONOS.png" alt="icon-dresscode">
+                </div>
+                <p>Viste elegante, hemos reservado el color blanco y el beige. Agradecemos que uses otro color y seas parte de nuestro gran día.</p>
+            </div>   
+         <div class="div2"></div>
+            <div class="gallery-section fade-in-element fade-in-element">
+            
+                <!-- Checkbox oculto que controla la visibilidad del modal -->
+                <input type="checkbox" id="toggle-modal" class="hidden-checkbox">
+            
+                <!-- Modal de fotos -->
+                <div id="photo-modal" class="modal">
+                    <!-- Label para cerrar el modal -->
+                    <label for="toggle-modal" class="close">&times;</label>
+                    <img class="modal-content" id="main-photo-modal" alt="modal">
+                </div> 
+            </div>
+            <div class="rsvp-section fade-in-element fade-in-element">
+                <h2>Confirmación</h2>
+                <lord-icon 
+                 src="https://cdn.lordicon.com/wzwygmng.json" 
+                 trigger="loop" 
+                 stroke="light"  
+                 colors="primary:#000000,secondary:#b29a68" 
+                 class="lord-icon-style"
+                 ></lord-icon>
+                <p>Para nosotros es muy importante que confirmes tu asistencia lo antes posible, o bien indicarnos si no podrás acompañarnos.</p>
+                <button type="button"  onclick="location.href='https://wa.me/50236737715?text='">CONFIRMA TU ASISTENCIA</button>
+            </div>
+            <div class="photo-full fade-in-element fade-in-element">
+                <img src="/images/V1.png" alt="Foto de la pareja">
+            </div>
+            <div class="banner-section fade-in-element fade-in-element1">
+                <p>"La felicidad comienza aquí, en nuestra boda".</p>
+            </div>
+            <footer class="fade-in-element fade-in-element">
+                <div class="social-icons">
+                    <a href="https://wa.me/50236011737" aria-label="Whatsapp"><i class="fab fa-whatsapp fade-in-element"></i></a>
+                    <a href="https://www.facebook.com/thetwodesign?mibextid=ZbWKwl" aria-label="Facebook"><i class="fab fa-facebook fade-in-element"></i></a>
+                    <a href="https://www.instagram.com/thetwodesign?igsh=M2k5eWF4dHl3czNv" aria-label="Instagram"><i class="fab fa-instagram fade-in-element"></i></a>
+                </div>
+                <div class="logo fade-in-element">
+                    <img src="/images/2.png" alt="Logo de la empresa">
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+    <script src="/script.js"></script>
+    <script src="/loads.js"></script>
+</body>
+</html>
