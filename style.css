@@ -116,15 +116,11 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.915);
     text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
     z-index: 10; /* Asegura que el texto esté por encima de otros elementos */
+    height: 100%;
 }
 /* Estilo para los encabezados y párrafos */
 .photo-text h1 {
-    font-size: 150px;
-    text-transform: capitalize;
-    margin-top: 10px;
-}
-.photo-text h2 {
-    font-size: 150px;
+    font-size: 300px;
     text-transform: capitalize;
     margin-top: 10px;
 }
@@ -143,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .photo-text1 h1 {
     font-size: 150px;
     text-transform: capitalize;
-    margin-top: -800px;
+    margin-top: 0;
 }
 .photo-text1 p {
     font-size: 100px;
@@ -541,7 +537,7 @@ footer .logo img {
         overflow: hidden; /* Evita que el contenido se desborde */
     }
     .photo-text h1 {
-        margin-top: -120px;
+        margin-top: 10px;
         font-size: 45px;
         font-weight: 100;
     }
@@ -551,7 +547,7 @@ footer .logo img {
         font-weight: 100;
     }
     .photo-text1 h1{
-        margin-top: 40px;
+        margin-top: 60px;
         font-size: 40px;
     }
     .photo-text1 p {
@@ -572,7 +568,7 @@ footer .logo img {
     }
     .contenedor-play{
         height: 240px;
-        margin-top: -30px;
+        margin-top: -37px;
     }
     .guest-section p, .invitation-info-section p, .special-day-section p .dresscode-section p, .gifts-section p, .filter-section p, .rsvp-section p, .playlist-section p, .dresscode-section p{
         font-size: 22px;
@@ -643,29 +639,41 @@ footer .logo img {
 }
 @media (min-width: 768px) and (max-width: 1900px) {
     .photo-section{
-        height: 2000px;
+        height: auto;
     }
     .main-content {
         padding: 0;
         max-width: 100%; /* Ajusta el ancho para tablets */
+        height: auto;
     }
     .contenedor-play h2 {
-        font-size: 55px;
+        font-size: 100px;
     }
     .time-display {
         font-size: 45px;
     }
     .photo-text h1 {
-        margin-top: -800px;
-        font-size: 135px;
+        margin-top: 40px;
+        font-size: 200px;
     }
-
-    .photo-text h2 {
-        margin-top: -100px;
-        font-size: 80px;
+    .photo-text h3 {
+        margin-top: -170px;
+        font-size: 100px;
     }
-
     .photo-text p {
+        font-size: 60px;
+        padding: 10px;
+    }
+    .photo-section1{
+        height: 1200px;
+        width: 100%;
+        margin-top: -140px;
+    }
+    .photo-text1 h1 {
+        margin-top: 200px;
+        font-size: 250px;
+    }
+    .photo-text1 p {
         font-size: 60px;
         padding: 10px;
     }
@@ -676,7 +684,6 @@ footer .logo img {
         width: 700px; /* Ajusta el tamaño de las imágenes principales en la galería */
         height: 750px;
     }
-
     .gallery-thumbs img {
         width: 160px;
         height: 200px;
@@ -688,22 +695,18 @@ footer .logo img {
     .countdown {
         margin: 0 auto;
     }
-
     .unit {
         width: 205px;
         height: 205px;
         padding: 10px;
         border-radius: 100%;
     }
-
     .number {
         font-size: 90px;
     }
-
     .label {
         font-size: 50px;
     }
-
     .itinerary-item i {
         font-size: 80px;
     }
@@ -735,16 +738,6 @@ footer .logo img {
     .gifts-section button, .playlist-section button, .filter-section button, .rsvp-section button, .wishes-section button{
         font-size: 30px;
         padding: 10px 20px;
-    }
-    #wish-form h3{
-        font-size: 55px;
-    }
-    #wish-form label{
-        font-size: 35px;
-    }
-    #wish-form input, #wish-form textarea {
-        width: 95%;
-        font-size: 35px;
     }
     .banner-section {
         font-size: 55px;
